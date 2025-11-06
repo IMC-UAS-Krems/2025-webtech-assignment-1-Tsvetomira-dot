@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bg {
+    background-color: black;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.bgindex {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75)), url(images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.headCon {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+/*header and footer*/
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+header ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #820000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+header ul li:hover::after {
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 20px;
+}
+.content p {
+    margin: 0% auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.footCon {
+    width: 100%;
+    padding: 20px 0px 20px;
+    background-color: #600000;
+}
+.contactFooter {
+    width: 30px;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a:hover {
+    background-color: #420000;
+    transition: 0.5s;
+}
+.footBottom {
+    background-color: #420000;
+    padding: 10px 0;
+    text-align: center;
+}
+.footBottom p {
+    color: #fff;
+}
+.designer {
+    font-style: oblique;
+}
+/*about me*/
+.bodyCon {
+    max-width: 100%;  
+    padding: 60px 60px;
+    background-color: #b84848;
+}
+section {
+    background-color: rgba(248, 218, 218, 0.811);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+}
+.profile-card {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.AboutMe{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.line {
+    color: #580b0b;
+    margin-bottom: 20px;
+}
+.pictureFriends {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+.interests ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.interests li {
+    padding: 5px 0;
+}
+.interests2 ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+.interests2 li {
+    padding: 5px 0;
+}
+/*CV*/
+.CVbg {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.CVbody {
+    background-color: #8c1616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cvCon { /*https://www.w3schools.com/css/css3_shadows_box.asp*/
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 20px 75px black;
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+}
+.top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.box {
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.CVimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: px;
+}
+.profileText {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    font-style: oblique;
+    font-size: 1.5em;
+}
+.CVcontent {
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+    margin-top: 3%;
+}
+.CvContact{
+    border-left: 4px solid #890000;
+    padding-left: 10px;
+    font-weight: 600;
+    margin-bottom: 10;
+    margin-top: 30px;
+}
+.leftSide ul{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+}
+.leftSide ul li{
+    list-style: none;
+    margin: 10px 0;
+    line-height: 1em;
+    display: flex;
+}
+.leftSide p{
+    margin: 10px ;
+}
+.rightSide{
+    border-left: 4px solid #890000;
+    padding-right: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 55px;
+}
+.rightSideP{
+    list-style: none;
+    margin-left: 55px;
+}
+/*gallery*/
+.galleryCon {
+    background-color: #a03838;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.gallery-item {
+    margin: 5px;
+    background-color: #d49797;
+    border: 2px solid #240909;
+    position: relative;
+    width: 180px;
+    border-radius: 7%;
+    overflow: hidden;
+}
+.gallery-item:hover {
+    border: 5px solid #240909;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+.gallery-item div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.gallery-item_width {
+    margin: 5px;
+    background-color: #d49797;
+    border: 2px solid #240909;
+    position: relative;
+    width: 380px;
+    height: 300px;
+    border-radius: 7%;
+    overflow: hidden;
+}
+.gallery-item_width:hover {
+    border: 5px solid #240909;
+}
+.gallery-item_width img {
+    width: 100%;
+    height: auto;
+}
+.gallery-item_width div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/*contact Form*/
+.contact {
+    background-color: #8d2424;
+    padding: 20px;
+}
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical
+}
+input[type=submit] {
+    background-color: #fcacac;
+    color: rgb(0, 0, 0);
+    padding: 12px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    display:flex;
+    margin-bottom: 6%;
+    margin-top: 6%;
+}
+input[type=submit]:hover {
+    background-color: #af5555;
+}
